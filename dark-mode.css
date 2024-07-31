@@ -1,0 +1,34 @@
+body {
+	background-color: white;
+	color: black;
+}
+
+#theme-switch {
+	position: fixed;
+	top: 1.5rem;
+	right: 2rem;
+	border-radius: 56px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.theme-icon {
+	max-width: 30px;
+}
+
+#dark {
+	display: none;
+}
+
+.dark-mode {
+	filter: invert(100%) hue-rotate(180deg);
+}
+.dark-mode img:not(#earth) {
+	filter: invert(100%) hue-rotate(180deg);
+}
+
+@media (max-width: 500px) {
+	#theme-switch {
+		right: 0px;
+	}
+}
