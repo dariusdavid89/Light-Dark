@@ -39,8 +39,8 @@ li {
 .nav-bar {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 100px;
+	justify-content: space-evenly;
+	position: relative;
 	min-height: 100px;
 	background-color: rgba(245, 245, 245, 0.479);
 }
@@ -176,12 +176,14 @@ span {
 	font-weight: 800;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1350px) {
 	.nav-menu {
-		gap: 10rem;
+		gap: 8rem;
 	}
+}
+
+@media (max-width: 923px) {
 	.project-img {
-		max-width: 500px;
 		margin: 20px 20px;
 	}
 
@@ -190,7 +192,9 @@ span {
 			margin: 20px 20px;
 		}
 		.nav-bar {
-			justify-content: space-around;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: start;
 		}
 
 		.hamburger {
@@ -245,7 +249,11 @@ span {
 		main {
 			display: block;
 			text-align: center;
-			padding: 0;
+			padding: 0 10px;
+		}
+		.project-img {
+			margin: 0.5rem auto;
+			max-width: 400px;
 		}
 	}
 
@@ -257,7 +265,7 @@ span {
 			font-size: 1rem;
 		}
 		.project-img {
-			max-width: 300px;
+			max-width: 250px;
 		}
 	}
 }
