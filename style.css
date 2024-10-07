@@ -269,3 +269,10 @@ span {
 		}
 	}
 }
+
+@media (max-width: 330px) {
+	.learn-btn,
+	.view-btn {
+		padding: 6px;
+	}
+}
